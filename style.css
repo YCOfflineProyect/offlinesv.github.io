@@ -1,0 +1,317 @@
+.checkbtn{
+  padding: 0; /*aca sacamos los espacios de mas*/
+  margin: 0;
+  text-decoration: none; /*aca sacamos el subrayado*/
+  list-style: none;/*aca las viñetas*/
+  box-sizing: border-box; /* esto es para que los elementos no se salgan del contenedor*/
+  font-family: Silkscreen;
+  color: #fff;
+ }
+
+
+
+p {
+font-size: 17px;
+line-height: 1.7em;
+margin: 10px 0;
+}
+ @import url(https://fonts.googleapis.com/css2?);
+ nav{
+  background-color: rgb(194, 146, 226);
+  height: 80px; /*le damos una altura al nav de 80px, los cuales vamos a desglosar en la linea que contiene los li con 40px, y 20px de espacio superior y los 20px restantes de margefn inferior, con eso tenemos bien distribuidos los 80px*/
+  width: 100%; /* aá establecemos el ancho, en este caso queremos el 100%*/
+   }
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  height: 40px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  }
+nav ul li{
+  display: inline-block ;
+  line-height: 80px;
+  margin: 0 5px ;
+}
+nav ul li a{
+  
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  }
+  li a.active, li a:hover{
+    background: rgba(49, 2, 71, 0.582); /*el color que le queremos poner al fondo cuando posemos el mouse sobre ese li*/
+    transition: 3s; /*el tiempo que tarda en cambiarse de color el fondo*/
+  }
+  .checkbtn{
+    font-size: 30px;
+    
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer; /*esto hace que al posar el puntero, no sea una fhecha y se ponga la manito*/
+    display: none;     
+  }    
+
+  #check{
+    display: none;
+  }
+ 
+
+  @media (max-width: 952px){
+    .enlace{
+      padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    } 
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left:-100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    li a:hover, li a.active{
+      background: none;
+      
+    }
+    #check:checked ~ul{
+      left: 0;
+    }
+  }
+
+
+/*INICIO*/
+h1 {
+  text-align: center;
+  
+}
+
+body {
+    
+    background-image:url(./img/white\ pattern.webp) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior:smooth;
+    font-family: Silkscreen;     
+  }
+
+@import url(https://fonts.googleapis.com/css2?);
+
+h1 { font-size: 40px; }
+h2 { font-size: 40px; }
+h3 { font-size: 28px; }
+h4 { font-size: 30px; }
+h5 { font-size: 30px; }
+h6 { font-size: 70px; }
+
+p{
+    font-size: 17px;
+    line-height: 1.7em;
+    margin: 10px 0;
+ }
+  
+  
+/* parte del diseño */
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+  
+  /*LOGO*/
+  #main-header .logo {
+    font-size: 28px;
+    text-transform: uppercase;
+
+  }
+  
+  #main-header h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #main-header p {
+    width: 70%;
+    padding-bottom: 40px;
+  }
+  
+  /* Descripción */
+  #description {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  
+  #description h2 {
+    padding-bottom: 30px;
+  }
+  .description-row {
+    padding-top: 30px;
+  }
+  
+ /*Parte de recomendación de juegos*/
+ .divisor{
+  width: 100%;
+  text-align: center;
+
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Minecraft*/
+.Minecraft{
+  width: 100%;
+  margin-inline-end: auto;
+  text-align: center;
+  background-image: url(https://media0.giphy.com/media/wKWxuUOcp9fdvckBty/giphy.gif?cid=ecf05e47xsfosu0pjhro6i1cn6hbg814030eqshkqbkxxt2h&rid=giphy.gif&ct=g);   
+   background-size: 500px;
+  background-position: center;
+    background-attachment: fixed;
+    color: rgb(255, 254, 254);
+}
+
+.Minecraft img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.testimonials{
+  padding: 40px 0;
+  text-align: center;
+  background: #fff;
+  color: lightskyblue;
+}
+
+h1{
+font-size: 40px;
+background: linear-gradient(rgb(112, 148, 216), rgb(4, 58, 92));
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+height: 5px;
+background: palevioletred;
+margin: 26px auto;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.col{
+  
+  max-width: 33.33%;
+  padding: 15px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.carrusel {
+  
+  display: flex;
+  align-items: center;
+}
+
+.carrusel-items{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5px 0px;
+  }
+
+
+.carrusel-item{
+  min-width: 280px;
+  max-width: 280px;
+  height: 280px;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+
+.carrusel-item img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.carrusel-item:hover {
+  transform: scale(1.1);
+}
+
+.separador{
+  background-color: #fff;
+  text-align: center;
+color: rgb(0, 0, 0);
+background-position: center;
+}
+  .a {
+    display: block;
+    width: 50px;
+    font-weight: 700px;
+    background-color: aquamarine;
+    border-radius: 10;
+    padding: 15px 30px;
+  }
+
+.AO{
+  width: 100%;
+  margin-inline-end: auto;
+  text-align: center;
+  background-image: url(./img/Argentum-3.png);
+  background-position: center;
+  color: #fff;
+}
+

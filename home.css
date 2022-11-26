@@ -1,0 +1,127 @@
+
+  *{
+    padding: 0; /*aca sacamos los espacios de mas*/
+    margin: 0;
+    text-decoration: none; /*aca sacamos el subrayado*/
+    list-style: none;/*aca las viñetas*/
+    box-sizing: border-box; /* esto es para que los elementos no se salgan del contenedor*/
+    font-family: Silkscreen;
+    color: white;
+   }
+
+   h1
+ {font-size: 70px;
+  text-align: center;
+}
+
+ h2
+ {font-size: 35px;
+  text-align: center;
+}
+
+.text{
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7em;
+  margin: 10px 0;
+}
+   @import url(https://fonts.googleapis.com/css2?);
+   nav{
+    background-color: rgb(155, 109, 185);
+    height: 80px; /*le damos una altura al nav de 80px, los cuales vamos a desglosar en la linea que contiene los li con 40px, y 20px de espacio superior y los 20px restantes de margefn inferior, con eso tenemos bien distribuidos los 80px*/
+    width: 100%; /* aá establecemos el ancho, en este caso queremos el 100%*/
+     }
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .logo{
+    height: 40px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    }
+  nav ul li{
+    display: inline-block ;
+    line-height: 80px;
+    margin: 0 5px ;
+  }
+  nav ul li a{
+    color: rgb(226, 217, 243);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    }
+    li a.active, li a:hover{
+      background: rgba(49, 2, 71, 0.582); /*el color que le queremos poner al fondo cuando posemos el mouse sobre ese li*/
+      transition: 3s; /*el tiempo que tarda en cambiarse de color el fondo*/
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: rgb(240, 255, 240);
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer; /*esto hace que al posar el puntero, no sea una fhecha y se ponga la manito*/
+      display: none;     
+    }    
+
+    #check{
+      display: none;
+    }
+    section{
+      background: url(./img/img\ ej2.jpg);
+      background-size: cover;
+      background-position: center center;
+      height: calc(100vh - 80px);
+  
+    }
+    
+   
+  
+
+    @media (max-width: 952px){
+      .enlace{
+        padding-left: 20px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      } 
+    }
+  
+    @media (max-width: 858px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(26, 13, 49);
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all 0.5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      li a:hover, li a.active{
+        background: none;
+        color: chartreuse;
+      }
+      #check:checked ~ul{
+        left: 0;
+      }
+    }
+  

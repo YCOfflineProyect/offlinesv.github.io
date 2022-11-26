@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css2?);
+body{
+background-image: url(https://media3.giphy.com/media/3oEdv1GbekAakxXO8g/giphy.gif?cid=ecf05e4799zcmuxcai3a5kxqhe17myyyztfaw047olarn90b&rid=giphy.gif&ct=g);
+
+background-position: center;
+
+color: azure;
+font-family: Silkscreen;
+}
+
+h1{
+    text-align: right;
+    
+}
+#text{
+    width: 600px;
+    font-size: 30px;
+    border: 2px solid white;
+    text-align: center;
+    margin: auto;
+}
+@import url(https://fonts.googleapis.com/css2?);
+
+nav{
+    background-color: rgb(202, 156, 202);
+    height: 80px; /*le damos una altura al nav de 80px, los cuales vamos a desglosar en la linea que contiene los li con 40px, y 20px de espacio superior y los 20px restantes de margefn inferior, con eso tenemos bien distribuidos los 80px*/
+    width: 100%; /* aá establecemos el ancho, en este caso queremos el 100%*/
+     }
+   .enlace{
+    position: absolute;
+    padding: 20px 50px;
+   }
+   .logo{
+    height: 40px;
+   }
+   nav ul{
+    float: right;
+    margin-right: 20px;
+    }
+   nav ul li{
+    display: inline-block ;
+    line-height: 80px;
+    margin: 0 5px ;
+   }
+   nav ul li a{
+    
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    }
+    li a.active, li a:hover{
+      background: rgb(172, 33, 172); /*el color que le queremos poner al fondo cuando posemos el mouse sobre ese li*/
+      transition: 3s; /*el tiempo que tarda en cambiarse de color el fondo*/
+    }
+    .checkbtn{
+      font-size: 30px;
+      
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer; /*esto hace que al posar el puntero, no sea una fhecha y se ponga la manito*/
+      display: none;     
+    }    
+   
+    #check{
+      display: none;
+    }

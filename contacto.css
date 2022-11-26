@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Silkscreen;
+}
+
+
+
+.logo{
+  height: 40px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  }
+nav ul li{
+  display: inline-block ;
+  line-height: 80px;
+  margin: 0 5px ;
+}
+
+  li a.active, li a:hover{
+    background: rgba(200, 125, 235, 0.582); /*el color que le queremos poner al fondo cuando posemos el mouse sobre ese li*/
+    transition: 3s; /*el tiempo que tarda en cambiarse de color el fondo*/
+  }
+  
+body {
+  height: 100vh;
+  color: rgb(243, 208, 234);
+  background-attachment: fixed;
+    background-image: url(https://media1.giphy.com/media/vtN0pqbjNojx6/giphy.gif?cid=ecf05e475ow6gczh6yudh7xo458hudp12l8pwq2tcsudvxin&rid=giphy.gif&ct=g);
+    background-size: 700px;
+    background-position: center;
+    color: rgb(253, 228, 228);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 55px;
+  line-height: 77px;
+  color: rgb(238, 214, 236);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(202, 0, 185);
+}
+span{
+  color: rgb(224, 42, 209);
+  text-shadow: 2px 2px 2px rgb(238, 214, 236);
+}
+.contact-content{
+ width: 500px;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgba(6, 0, 7, 0.459);
+    border-radius: 2rem;
+  
+}
+
+.btn {
+  block-size: 50px;
+  
+}
+
+.btn.full {
+  width: 20%;
+  text-align: center;
+}
+.iconos {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.border-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: solid thin rgb(252, 244, 252);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+  background-color: #fcfcfc96;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #bf1af181;
+  border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:beige;
+    position: relative;
+}
+
+
+.form {
+  max-inline-size: 550px;
+  margin: auto;
+}
+
+.form label {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  padding-inline-start: .5em;
+}
+
+
+
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8em;
+  border-radius: .5em;
+  border: 1px solid #020002;
+}
